@@ -6,6 +6,4 @@ app.get("/", function(req,res){
     res.render("pattap.ejs");
 });
 
-app.listen(3000,function(){
-    console.log("server started");
-});
+app.listen(process.env.PORT, process.env.IP);
